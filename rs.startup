@@ -1,0 +1,4 @@
+cp /shared/resolv.conf /etc/resolv.conf
+cp /shared/rs/interfaces /etc/network/interfaces
+
+/etc/init.d/networking restart

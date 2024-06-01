@@ -1,0 +1,13 @@
+cp /shared/resolv.conf /etc/resolv.conf
+cp /shared/sf/interfaces /etc/network/interfaces
+
+/etc/init.d/networking restart
+
+useradd -m admin
+echo "admin:admin" | chpasswd
+
+apt update && apt install -y vsftpd
+
+cp /shared/sf/vsftpd.conf /etc/vsftpd.conf
+
+/etc/init.d/vsftpd start

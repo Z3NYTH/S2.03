@@ -1,0 +1,3 @@
+cp /shared/pc_dhcp/interfaces /etc/network/interfaces
+
+/etc/init.d/networking restart
