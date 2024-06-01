@@ -17,4 +17,4 @@ auto eth2
 iface eth2 inet static
 address 172.16.192.1
 netmask 255.255.255.128
-post-up ip route add 172.16.193.128/23 via 172.16.193.130
+post-up ip route add 172.16.193.128/25 via 172.16.192.2
